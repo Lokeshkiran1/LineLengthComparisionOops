@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace LineLengthComparisionOops
 {
-    internal class GetCartesion
+    internal class EqualityOffTwoLines
     {
-
         public static void getCartesian()
         {
             double x1, x2, y1, y2;
@@ -28,9 +27,18 @@ namespace LineLengthComparisionOops
             Console.WriteLine("Enter points (a2,b2): ");
             a2 = double.Parse(Console.ReadLine());
             b2 = double.Parse(Console.ReadLine());
-            /*length1 = Math.Sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
+            length1 = Math.Sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
             length2 = Math.Sqrt(((a2 - a1) * (a2 - a1)) + ((b2 - b1) * (b2 - b1)));
-            Console.WriteLine("The length between two points are:" + length1 + length2);*/
+
+            if (length1.Equals(length2))
+            {
+                Console.WriteLine("The length of two lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("The length of two lines are not equal");
+            }
+
         }
     }
 }
