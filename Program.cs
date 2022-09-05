@@ -11,7 +11,7 @@ namespace LineLengthComparisionOops
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Line Comoarision Program!");
-            Console.WriteLine("Choose Option:\n1.UC1-Getting the co-ordinates of two lines\n2.Equality of Two Lines\n3.Comparing length of two lines");
+            Console.WriteLine("Choose Option:\n1.UC1-Getting the co-ordinates of two lines\n2.Equality of Two Lines\n3.Comparing length of two lines\n4.Compare the length of lines using Oops");
             int choice=int.Parse(Console.ReadLine());
             switch(choice)
             {
@@ -23,6 +23,12 @@ namespace LineLengthComparisionOops
                     break;
                 case 3:
                     CompareLength.getCartesian();
+                    break ;
+                    case 4:
+                        CompareLengthOops compareLengthOops = new CompareLengthOops();
+                    compareLengthOops.input();
+                    compareLengthOops.cal();
+                    compareLengthOops.CompareLines();
                     break ;
                 default:
                     Console.WriteLine("wrong choice");
