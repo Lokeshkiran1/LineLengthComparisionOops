@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompareLength.cs" />
     <Compile Include="EqualityOffTwoLines.cs" />
     <Compile Include="GetCartesion.cs" />
     <Compile Include="Program.cs" />
